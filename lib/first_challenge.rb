@@ -1,4 +1,3 @@
-require "pry"
 def first_challenge
   contacts = {
     "Jon Snow" => {
@@ -14,7 +13,6 @@ def first_challenge
     }
   }
     #code goes here
-    #binding.pry
     contacts["Freddy Mercury"][:favorite_icecream_flavors].delete_if do |value|
         value == "strawberry"
     end
