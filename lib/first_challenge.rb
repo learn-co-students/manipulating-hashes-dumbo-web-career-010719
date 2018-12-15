@@ -1,3 +1,6 @@
+#first_challenge - iterates over the contacts hash and deletes strawberry
+# from Freddy Mercury's favorite ice cream flavors
+
 def first_challenge
   contacts = {
     "Jon Snow" => {
@@ -14,9 +17,8 @@ def first_challenge
   }
 
   #your code here
-
-
+  contacts["Freddy Mercury"] [:favorite_icecream_flavors].shift
+ 
   #remember to return your newly altered contacts hash!
   contacts
 end
-
