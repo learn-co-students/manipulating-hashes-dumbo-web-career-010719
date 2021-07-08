@@ -14,7 +14,15 @@ def first_challenge
   }
 
   #your code here
-
+  contacts.each do |name, info|
+    if name == "Freddy Mercury"
+      contacts["Freddy Mercury"].each do |k,v|
+        if Array === v
+          v.delete("strawberry") 
+        end
+      end
+    end
+  end
 
   #remember to return your newly altered contacts hash!
   contacts
